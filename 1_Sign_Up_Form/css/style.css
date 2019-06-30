@@ -1,0 +1,104 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 100%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #FFFFFF; }
+
+.card-above__text {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+  letter-spacing: 0.8rem;
+  text-align: center;
+  padding: 3rem; }
+  .card-above__text--main {
+    display: block;
+    font-size: 7rem;
+    font-weight: 400;
+    background-image: linear-gradient(to right, #FFFFFF, #302b63);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .card-above__text--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.6rem; }
+
+.section-sign {
+  width: 100%;
+  color: #FFFFFF;
+  background-color: transparent;
+  border-bottom: 2px solid transparent;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  transition: all .5s; }
+  .section-sign--in {
+    display: inline-block;
+    float: left; }
+    .section-sign--in:hover {
+      border-bottom: 2px solid #FFFFFF; }
+  .section-sign--up {
+    display: inline-block;
+    float: right; }
+    .section-sign--up:hover {
+      border-bottom: 2px solid #FFFFFF; }
+  .section-sign--in:hover + .section-sign--up {
+    font-weight: 200; }
+  .section-sign--up:hover ~ .section-sign--in {
+    font-weight: 200; }
+
+.bg-image {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(15, 12, 41, 0.7), rgba(36, 36, 62, 0.8), rgba(36, 36, 62, 0.7)), url(../img/wolf.jpeg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  filter: blur(1px); }
+
+.card {
+  width: 35rem;
+  height: 62rem;
+  box-shadow: 0 1rem 1.5rem rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFFFFF; }
+  .card-above {
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 83%, 0% 70%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 83%, 0% 70%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    z-index: 5;
+    position: relative; }
+    .card-above__picture {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(rgba(15, 12, 41, 0.65), rgba(60, 16, 83, 0.15)), url("https://images.pexels.com/photos/957002/berchtesgaden-alpine-watzmann-berchtesgaden-national-park-957002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); }
+  .card-below {
+    width: 100%;
+    height: 50%;
+    position: relative; }

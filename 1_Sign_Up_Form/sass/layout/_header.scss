@@ -1,0 +1,14 @@
+.bg-image {
+  height: 95vh;
+  background-image: linear-gradient(
+                  to right bottom,
+                  rgba($color-primary, 0.7),
+                  rgba($color-primary-dark, 0.8),
+                  rgba($color-primary-dark, 0.7)),
+  url(../img/wolf.jpeg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  filter: blur(1px);
+}
+
