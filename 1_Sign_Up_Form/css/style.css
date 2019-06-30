@@ -6,7 +6,7 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 100%; }
+  font-size: 105%; }
 
 body {
   box-sizing: border-box; }
@@ -15,15 +15,15 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  text-transform: uppercase; }
 
 .card-above__text {
-  color: #FFFFFF;
-  text-transform: uppercase;
-  margin-bottom: 6rem;
   letter-spacing: 0.8rem;
   text-align: center;
-  padding: 3rem; }
+  opacity: 0.7; }
+  .card-above__text:hover {
+    opacity: 1; }
   .card-above__text--main {
     display: block;
     font-size: 7rem;
@@ -39,36 +39,111 @@ body {
 
 .section-sign {
   width: 100%;
-  color: #FFFFFF;
-  background-color: transparent;
-  border-bottom: 2px solid transparent;
-  text-transform: uppercase;
-  font-size: 2.3rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  transition: all .5s; }
+  margin-bottom: 2rem; }
   .section-sign--in {
+    position: relative;
     display: inline-block;
-    float: left; }
-    .section-sign--in:hover {
-      border-bottom: 2px solid #FFFFFF; }
+    width: fit-content;
+    margin-right: 10.5rem; }
+    .section-sign--in:before, .section-sign--in:after {
+      content: "";
+      position: absolute;
+      bottom: 4px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: #FFFFFF; }
+    .section-sign--in:before {
+      opacity: 0;
+      transform: translateY(-12px);
+      transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s; }
+    .section-sign--in:after {
+      opacity: 0;
+      transform: translateY(6px);
+      transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.5s; }
+    .section-sign--in:hover:before, .section-sign--in:hover:after {
+      opacity: 1;
+      transform: translateY(0); }
+    .section-sign--in:hover:before {
+      transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.5s; }
+    .section-sign--in:hover:after {
+      transition: transform 0s 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.5s; }
+  .section-sign--in:hover ~ .section-sign--up {
+    font-weight: 200;
+    opacity: 0.8; }
   .section-sign--up {
+    position: relative;
     display: inline-block;
-    float: right; }
-    .section-sign--up:hover {
-      border-bottom: 2px solid #FFFFFF; }
-  .section-sign--in:hover + .section-sign--up {
-    font-weight: 200; }
-  .section-sign--up:hover ~ .section-sign--in {
-    font-weight: 200; }
+    width: fit-content; }
+    .section-sign--up:before, .section-sign--up:after {
+      content: "";
+      position: absolute;
+      bottom: 4px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: #FFFFFF; }
+    .section-sign--up:before {
+      opacity: 0;
+      transform: translateY(-12px);
+      transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s; }
+    .section-sign--up:after {
+      opacity: 0;
+      transform: translateY(6px);
+      transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.5s; }
+    .section-sign--up:hover:before, .section-sign--up:hover:after {
+      opacity: 1;
+      transform: translateY(0); }
+    .section-sign--up:hover:before {
+      transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.5s; }
+    .section-sign--up:hover:after {
+      transition: transform 0s 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.5s; }
+
+.form {
+  background-color: rbga(#FFFFFF, 0.5);
+  width: 100%;
+  height: fit-content; }
+  .form__input {
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem;
+    margin: 1rem 0;
+    width: 100%;
+    display: block;
+    transition: all .3s;
+    border-radius: 60px;
+    background-color: #003152;
+    border: 3px solid transparent;
+    color: inherit;
+    text-align: left; }
+    .form__input::-webkit-input-placeholder {
+      color: rgba(255, 255, 255, 0.5);
+      padding: 0.5rem 2rem;
+      text-align: left; }
+
+.btn {
+  width: 100%;
+  height: max-content;
+  font-size: 1.4rem;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  padding: 0.5rem 2rem;
+  border-radius: 60px;
+  font-weight: 400; }
+  .btn--green {
+    background-color: #28b485;
+    opacity: 0.8; }
+  .btn--blue {
+    background-color: #003152;
+    padding: 0.5rem 2rem; }
+  .btn--text {
+    font-size: 0.5rem; }
 
 .bg-image {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(15, 12, 41, 0.7), rgba(36, 36, 62, 0.8), rgba(36, 36, 62, 0.7)), url(../img/wolf.jpeg);
+  background-image: linear-gradient(to right bottom, rgba(119, 119, 119, 0.4), rgba(153, 153, 153, 0.3)), url(../img/wolf.jpeg);
   background-size: cover;
   background-position: top;
-  position: relative;
-  filter: blur(1px); }
+  position: relative; }
 
 .card {
   width: 35rem;
@@ -81,15 +156,13 @@ body {
   color: #FFFFFF; }
   .card-above {
     width: 100%;
-    height: 50%;
+    height: 40%;
     background-size: cover;
-    background-blend-mode: screen;
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 83%, 0% 70%);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 83%, 0% 70%);
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 96%, 0% 80%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 96%, 0% 80%);
+    position: relative;
     z-index: 5;
-    position: relative; }
+    margin: 1rem 0; }
     .card-above__picture {
       position: absolute;
       top: 0;
@@ -100,5 +173,12 @@ body {
       background-image: linear-gradient(rgba(15, 12, 41, 0.65), rgba(60, 16, 83, 0.15)), url("https://images.pexels.com/photos/957002/berchtesgaden-alpine-watzmann-berchtesgaden-national-park-957002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); }
   .card-below {
     width: 100%;
-    height: 50%;
-    position: relative; }
+    height: 65%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2.3rem;
+    padding: 0 4rem;
+    margin: -16% 0 1rem 0;
+    background-color: rgba(60, 16, 83, 0.1); }

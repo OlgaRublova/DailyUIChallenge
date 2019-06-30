@@ -1,0 +1,28 @@
+.form {
+  background-color: rbga($color-white, .5);
+  width: 100%;
+  height: fit-content;
+
+  &__input {
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem;
+    margin: 1rem 0;
+    width: 100%;
+    display: block;
+    transition: all .3s;
+    border-radius: 60px;
+    background-color: $blue-dark;
+    border: 3px solid transparent;
+    color: inherit;
+    text-align: left;
+
+
+
+    &::-webkit-input-placeholder {
+      color: rgba($color-white, 0.5);
+      padding: 0.5rem 2rem;
+      text-align: left;
+
+    }
+  }
+}

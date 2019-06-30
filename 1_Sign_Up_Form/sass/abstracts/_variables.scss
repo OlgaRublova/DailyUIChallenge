@@ -19,6 +19,12 @@ $color-grey-dark-3: #333;
 $color-white: #FFFFFF;
 $color-black: #000;
 
+$red: red;
+$green-primary:#28b485;
+$green-primary-light: #9ACD32;
+$blue:#4682B4;
+$blue-dark:#003152;
+
 
 // FONT
 $default-font-size: 1.6rem;
@@ -28,3 +34,8 @@ $default-font-size: 1.6rem;
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-horizontal: 6rem;
+
+//ANIMATION
+$duration: .5s;
+$distance: 12px;
+$easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);

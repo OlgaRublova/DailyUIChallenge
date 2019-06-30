@@ -7,30 +7,31 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
 <header class="bg-image"></header>
 
 <div class="card">
     <div class="card-above">
         <h1 class="card-above__text">
             <span class="card-above__text--main">Stolby</span>
-            <span class="card-above__text--sub">Start your journey. Today</span>
+            <span class="card-above__text--sub">Start your journey. Today.</span>
         </h1>
         <div class="card-above__picture"></div>
     </div>
     <div class="card-below">
         <div class="section-sign">
-            <div class="section-sign--in">Sign in</div>
-            <div class="section-sign--up">Sign up</div>
+            <div class="section-sign section-sign--in">Sign in</div>
+            <div class="section-sign section-sign--up">Sign up</div>
         </div>
+
         <div class="form">
-            <div class="form__group">
-            </div>
+            <input type="text" class="form__input" placeholder="User name" id="name" required>
+            <input type="password" class="form__input" placeholder="Password" id="password" required>
         </div>
+
+        <div class="btn btn--green">Take me there</div>
+        <h3 class="btn btn__text">OR</h3>
+        <div class="btn btn--blue">Sign in with Facebook</div>
     </div>
 </div>
-
-
-
 </body>
 </html>
