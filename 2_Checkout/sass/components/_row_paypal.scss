@@ -1,0 +1,23 @@
+.paypal {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color:$color-paypal;
+
+  .left, .right {
+   @include left-right;
+  }
+
+  .left {
+    float: left;
+    margin-left: 50px;
+
+    label {
+      @include label-upper;
+    }
+  }
+
+  .right {
+    float: right;
+    margin-right: 30px;
+  }
+}

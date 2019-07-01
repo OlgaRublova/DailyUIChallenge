@@ -1,0 +1,18 @@
+.credit {
+  background-color: #1E2148;
+
+  .left {
+    float: left;
+    margin-left: 50px;
+
+    label {
+      @include label-upper;
+
+    }
+  }
+
+  .left, .right {
+    @include left-right;
+
+  }
+}

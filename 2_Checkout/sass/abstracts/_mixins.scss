@@ -1,0 +1,29 @@
+@mixin left-right {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin label_upper {
+  color: $label-color;
+  cursor: pointer;
+  margin-left: 10px;
+
+}
+
+@mixin label_below {
+  display: inline-block;
+  letter-spacing: 0.5px;
+  color: #8F92C3;
+  width: 100px;
+}
+
+@mixin input {
+  width: 300px;
+  background-color: transparent;
+  font-family: 'Source Code Pro', monospace;
+  border: none;
+  outline: none;
+  color: white;
+}

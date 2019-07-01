@@ -1,0 +1,16 @@
+.info {
+  @include left-right;
+  margin-left: 40px;
+
+  label {
+    @include label_below;
+  }
+
+  input {
+    display: inline-block;
+    max-width: 300px;
+    margin-left: 50px;
+    @include input;
+
+  }
+}
