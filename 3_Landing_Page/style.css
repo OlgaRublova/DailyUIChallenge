@@ -1,0 +1,123 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+}
+
+.header {
+    height: 100vh;
+    /*width: 100vw;*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.item {
+    width: 20%;
+    height: 85%;
+    background-size: cover;
+    background-blend-mode: screen;
+    /*background-size: contain;*/
+    position: relative;
+    /*object-fit: cover;*/
+
+    /*flex: 1;*/
+    overflow: hidden;
+    transition: .1s;
+
+}
+.item:hover {
+    flex: 0 0 100%;
+    background-repeat: no-repeat;
+    width:100vw;
+    height:100vh;
+    background-size: cover;
+}
+.item:hover .btn{
+    transform: scale(1.2);
+
+}
+.one {
+    background: linear-gradient(45deg,
+    rgba(0,0,255,0.7) 0%,
+    rgba(50, 128, 128, 0.6) 100%),
+    url("img/one.jpeg") center;
+}
+
+
+.two {
+    background: linear-gradient(45deg,
+            rgba(255, 0, 0, 0.3),
+            rgba(255, 0, 0, 0.5)),
+    url("img/two.jpeg") center;
+}
+
+
+.three {
+    background: linear-gradient(
+            rgba(255, 255, 255, 0.3),
+            rgba(0, 255, 255, 0.5)), url("img/three.jpeg") center;
+}
+
+
+.four {
+    background: linear-gradient(
+            rgba(50, 50, 10, 1),
+            rgba(0, 0, 0, 1)), url("https://images.pexels.com/photos/1755385/pexels-photo-1755385.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") center;
+}
+
+
+.five {
+    background: linear-gradient(
+            rgba(0, 255, 0, 0.5),
+            rgba(0, 255, 255, 0.5)), url("img/five.jpeg") center;
+}
+
+.btn {
+    width: 7rem;
+    height: 2rem;
+    border-radius: 30px;
+    background-color: white;
+    /*background-color: transparent;*/
+    /*border:none;*/
+    outline:none;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    font-weight: 900;
+    text-align: center;
+    padding: 0.7rem 1rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.btn--blue {
+    color:rgba(0,0,255,1) ;
+
+}
+
+.btn--red {
+    color: darkred;
+}
+
+.btn--lightblue {
+    color:rgba(0, 255, 255, 1) ;
+}
+
+.btn--grey {
+    color: black;
+}
+
+.btn--lightgreen {
+    color: green;
+}
+
+
