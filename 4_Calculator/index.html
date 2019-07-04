@@ -26,29 +26,29 @@
         <div class="calc">
             <div class="calculator">
                 <input type="text" class="screen" value="" disabled/>
-                    <button type="button" class="all-clear key key--c" value="all-clear">AC</button>
-                    <button type="button" class="operator key key--plus-minus" value="+/-">+/-</button>
-                    <button type="button" class="operator key key--percent" value="%">%</button>
-                    <button type="button" class="operator key key--divide" value="/">&divide;</button>
+                <button type="button" class="all-clear key key--c" value="all-clear" data-action="all-clear">AC</button>
+                <button type="button" class="operator key key--plus-minus" value="+/-" data-action="+/-">+/-</button>
+                <button type="button" class="operator key key--percent" value="%" data-action="%">%</button>
+                <button type="button" class="operator key key--divide" value="/" data-action="/">&divide;</button>
 
-                    <button class="key key--7" type="button" value="7">7</button>
-                    <button class="key key--8" type="button" value="8">8</button>
-                    <button class="key key--9" type="button" value="9">9</button>
-                    <button type="button" class="operator key key--multiply" value="*">&times;</button>
+                <button class="key key--7" type="button" value="7">7</button>
+                <button class="key key--8" type="button" value="8">8</button>
+                <button class="key key--9" type="button" value="9">9</button>
+                <button type="button" class="operator key key--multiply" value="*" data-action="*">&times;</button>
 
-                    <button class="key key--4" type="button" value="4">4</button>
-                    <button class="key key--5" type="button" value="5">5</button>
-                    <button class="key key--6" type="button" value="6">6</button>
-                    <button type="button" class="operator key key--minus" value="-">-</button>
+                <button class="key key--4" type="button" value="4">4</button>
+                <button class="key key--5" type="button" value="5">5</button>
+                <button class="key key--6" type="button" value="6">6</button>
+                <button type="button" class="operator key key--minus" value="-" data-action="-">-</button>
 
-                    <button class="key key--1" type="button" value="1">1</button>
-                    <button class="key key--2" type="button" value="2">2</button>
-                    <button class="key key--3" type="button" value="3">3</button>
-                    <button type="button" class="operator key key--plus" value="+">+</button>
+                <button class="key key--1" type="button" value="1">1</button>
+                <button class="key key--2" type="button" value="2">2</button>
+                <button class="key key--3" type="button" value="3">3</button>
+                <button type="button" class="operator key key--plus" value="+" data-action="+">+</button>
 
-                    <button class="key key--0" type="button" value="0">0</button>
-                    <button type="button" class="decimal key key--dot" value=".">.</button>
-                    <button type="button" class="equal-sign key key--even" value="=">=</button>
+                <button class="key key--0" type="button" value="0">0</button>
+                <button type="button" class="decimal key key--dot" value="." data-action=".">.</button>
+                <button type="button" class="equal-sign key key--even" value="=" data-action="=">=</button>
             </div>
         </div>
         <div class="i-phone__below-side">
@@ -58,6 +58,25 @@
         </div>
     </div>
 </div>
+<script>
+    const calculator = document.querySelector('.calc'); //defining constant for calculator
+    const keys = calculator.querySelector('.calculator'); //defining keys
+
+    keys.addEventListener('click', e => { //on click on keys element, passing "e" Javascript Event object as a parameter
+            const key = e.target; // getting event target for the key element
+            if (key.matches('button')) { //checking the key type
+                const action = key.dataset.action; //taking key "data-action" attribute
+                if (action) {
+                    console.log('Action: ' + action);
+                } else {
+                    console.log('Number: ' + key.value);
+
+                }
+            }
+        }
+    );
+
+</script>
 
 </body>
 </html>

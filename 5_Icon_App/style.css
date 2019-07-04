@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+}
+
+.header {
+    background-image: linear-gradient(45deg, #8360c3, #2ebf91);
+    background-size: cover;
+    background-repeat: no-repeat;
+height: 100vh;
+}
+.container {
+    height: 25rem;
+    width: 25rem;
+    border-radius: 5rem;
+    background-color: whitesmoke;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -145%);
+    -webkit-transform: translate(-50%, -145%);
+    box-shadow: 0 0.3rem 0.2rem #509ba4;
+}
+.leaf {
+    height: 40%;
+    width: 40%;
+    border-radius: 100px 0;
+}
+.leaf--pink {
+    background-color: rgba(245,186,242,0.6);
+    position: absolute;
+    bottom:16%;
+    left:48%;
+    transform: rotate(-3deg);
+    z-index: 1;
+}
+.leaf--blue {
+    background-color: rgba(70,174,219,0.6);
+    position: absolute;
+    bottom:21%;
+    left:40%;
+    transform: rotate(-23deg);
+}
+.leaf--green {
+    background-color: rgba(23,213,190,0.6) ;
+    z-index: 1;
+    position: absolute;
+    bottom:15%;
+    left:9%;
+    transform: rotate(-90deg);
+}
+.leaf--violet {
+    background-color: rgba(113,5,148,0.5);
+    z-index: -1;
+    position: absolute;
+    bottom:22%;
+    left:21%;
+    transform: rotate(-62deg);
+}
+
+.circle {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: yellow;
+
+    position: absolute;
+    right:-15%;
+    top:-20%;
+    text-align: center;
+    padding: 3rem 2rem;
+}
