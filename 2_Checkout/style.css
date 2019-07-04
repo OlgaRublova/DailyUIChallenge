@@ -1,0 +1,273 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,200,300,500,600,700,900);
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Lato", sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.price h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: #18C2C0;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 0 #6fd1bd;
+    transition: text-shadow 0.2s ease-in-out;
+}
+
+
+.price h1:hover {
+    transition: all .5s;
+    text-shadow: -4px -4px 0 salmon;
+}
+.card {
+    margin: 20px auto 20px auto;
+    width: 30rem;
+    height: 30rem;
+    border: 2px solid #292C58;
+    border-radius: 10px;
+    background-color: #242852;
+
+}
+
+.card .row {
+    height: 20%;
+    width: 100%;
+    border-bottom: 1.2px solid #292C58;
+}
+
+.card .row:last-child {
+    border: none;
+}
+
+.card .paypal,
+.card .credit {
+    background-color: #1E2148;
+}
+
+.paypal .left,
+.paypal .right,
+.credit .left,
+.credit .right {
+    position: relative;
+    top: 35%;
+}
+
+.paypal,
+.credit,
+.details {
+    display: table;
+}
+.paypal .left,
+.credit .left,
+.details .left {
+    display: table-cell;
+}
+
+.paypal .left input[type=radio],
+.credit .left input[type=radio] {
+    visibility: hidden;
+}
+
+
+.paypal .right,
+.credit .right,
+.details .right {
+    display: table-cell;
+}
+
+.paypal .right img,
+.credit .right img {
+    width: 42px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.cardholder .info,
+.number .info {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: 1.7rem;
+    font-family: "Lato", sans-serif;
+    display: table;
+
+}
+
+.cardholder .info label,
+.number .info label {
+    color: #8F92C3;
+    display: table-cell;
+
+}
+
+.cardholder .info input,
+.number .info input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin: 0 0 0 2rem;
+    color: white;
+    font-size: inherit;
+    display: table-cell;
+}
+
+
+.cardholder .info input::placeholder,
+.number .info input::placeholder {
+    font-family: inherit;
+    color: #444880;
+
+}
+
+.details .left,
+.details .right {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.details .left {
+    /*float: left;*/
+    padding-left: 2rem;
+    max-width: 50%;
+}
+
+.details .left label {
+    color: #8F92C3;
+    width: 100px;
+    margin-right: 20px;
+}
+
+.details .left select {
+    font-family: "Lato", sans-serif;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #444880;
+}
+
+.details .left span {
+    font-family: "Lato", sans-serif;
+    color: #444880;
+    margin: 0 2px;
+}
+
+.details .right {
+    max-width: 50%;
+}
+
+.details .right label {
+    margin-right: 20px;
+    color: #8F92C3;
+}
+
+.details .right input {
+    text-align: center;
+    width: 50px;
+    font-family: "Lato", sans-serif;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+
+.details .right input::placeholder {
+    font-family: "Lato", sans-serif;
+    color: #444880;
+}
+
+.details .right span {
+    text-align: center;
+    display: inline-block;
+    font-family: "Lato", sans-serif;
+    cursor: pointer;
+    margin-left: 50px;
+    color: #18C2C0;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #18C2C0;
+    border-radius: 50%;
+}
+
+.button button {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    width: 30rem;
+    background-color: #18C2C0;
+    border: none;
+    color: #fff;
+    padding: 18px;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button button:hover {
+    background-color: #15aeac;
+    transform: translateY(-3px);
+}
+
+.form__radio-input {
+    display: none;
+}
+
+.form__radio-label {
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+    padding-left: 4.2rem;
+    color: white;
+    font-family: "Lato", sans-serif;
+}
+
+.form__radio-button {
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 5px solid #05b3b4;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 2rem;
+    top: 0;
+}
+
+.form__radio-button::after {
+    content: "";
+    display: block;
+    height: 0.4rem;
+    width: 0.4rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #05b3b4;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+    opacity: 1;
+}
