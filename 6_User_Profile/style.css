@@ -1,0 +1,343 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+}
+.header {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(95deg,#808080, #3fada8);
+    display: flex;
+    justify-content: center;
+    padding: 1% 1% 1% 1%;
+}
+.container {
+    height: 28rem;
+    width: 18rem;
+    position: relative;
+    top: 15%;
+    left: -25%;
+    border-radius: 1rem;
+    padding: 1.8rem 0 2.5rem;
+    border: 4px solid white;
+    overflow: hidden;
+    text-align: center;
+    color:white;
+    background-color: gainsboro;
+    outline: none;
+}
+.picture {
+    display: inline-block;
+    height: 9rem;
+    width: 9rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.picture::before {
+    content: "";
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background-image:
+            linear-gradient(rgba(255,185,0,0.9),rgba(68,201,175, .9)),
+url("https://images.pexels.com/photos/270373/pexels-photo-270373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    position: absolute;
+    top: -135%;
+    right: 0;
+    left: 0;
+    transform: scale(3.5);
+    transition: all 0.3s linear 0s;
+    border: 1px solid white;
+
+}
+.container:hover .picture::before {
+    height: 100%;
+}
+.container .picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+}
+.container:hover .picture img {
+    box-shadow:
+            0 0 0 5px #f7f5ec,
+            0 0 0 7px #26ba6f;
+    transform: scale(1.1);
+
+}
+.heading__name {
+    font-size: 0.7rem;
+    margin-top: 0.7rem;
+
+}
+.heading__title {
+    display: block;
+    font-size: 0.9rem;
+    color: #4e5052;
+    text-transform: capitalize;
+    margin-top: 0.7rem;
+}
+.container .social {
+    width: 100%;
+    height: 8%;
+    background-color: lightpink;
+    position: absolute;
+    bottom: -7rem;
+    left: 0;
+    transition: all 0.5s ease 0s;
+}
+.container:hover .social {
+    bottom: 0;
+}
+.container .social li {
+    display: inline-block;
+}
+.container .social li a {
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    color: white;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+.container .social li a:hover {
+    color: black;
+    background-color: #f7f5ec;
+}
+
+
+
+
+
+
+
+
+.wrapper {
+    position: absolute;
+    top: 16%;
+    right: 15%;
+    height: 28rem;
+    width: 18rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
+    background: #24bdda;
+    overflow: hidden;
+    font-family: 'Krub', sans-serif;
+}
+.wrapper .ds-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 19rem;
+    height: 10rem;
+    background: yellow;
+    animation: dsTop 1.5s;
+    clip-path: polygon(0% 0%, 90% 0%, 0% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 0% 100%, 0% 100%);
+
+}
+.wrapper .avatar-holder {
+    position: absolute;
+    margin: auto;
+    top: 30px;
+    right: 0;
+    left: 0;
+    width: 8rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    box-shadow:
+            0 0 0 5px white,
+            0 0 0 10px lightgrey;
+    overflow: hidden;
+    animation: mvTop 1.5s;
+}
+.wrapper .avatar-holder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.wrapper .name {
+    position: absolute;
+    margin: auto;
+    top: -60px;
+    bottom: 0;
+    width: inherit;
+    height: 40px;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+}
+.wrapper .name a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.wrapper .name a:hover {
+    color: yellow;
+}
+
+.wrapper .ds-info {
+    position: absolute;
+    margin: auto;
+    top: 40px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: inherit;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInMove 2s linear;
+    animation-fill-mode: forwards;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+
+}
+.wrapper .ds-info .pens,
+.wrapper .ds-info .projects,
+.wrapper .ds-info .posts {
+    width: calc(250px / 3);
+}
+.wrapper .ds-info  h6 {
+    color: yellow;
+}
+
+.wrapper .ds-skill {
+    position: absolute;
+    margin: auto;
+    bottom: 1.5rem;
+    right: 0;
+    left: 11%;
+    width: 80%;
+    height: 120px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    color: yellow;
+    animation: mvBottom 1.5s;
+
+}
+.wrapper .ds-skill h6 {
+    margin-bottom: 7px;
+
+}
+.wrapper .ds-skill .skill h6 {
+    margin: 6px 0;
+    color: white;
+}
+.wrapper .ds-skill .skill .fab {
+    color: yellow;
+
+}
+.wrapper .ds-skill .skill .bar {
+    height: 5px;
+    background: yellow;
+    text-align: right;
+}
+.wrapper .ds-skill .skill .bar p {
+    color: white;
+    padding-top: 5px;
+    animation: fadeIn 5s;
+    font-size: 0.7rem;
+
+}
+.wrapper .ds-skill .skill .bar:hover {
+    background: white;
+}
+.wrapper .ds-skill .skill .bar-html {
+    width: 95%;
+    animation: htmlSkill 1s;
+    animation-delay: .4s;
+}
+.wrapper .ds-skill .skill .bar-css {
+    width: 90%;
+    animation: cssSkill 2s;
+    animation-delay: .4s;
+}
+.wrapper .ds-skill .skill .bar-js {
+    width: 75%;
+    animation: jsSkill 3s;
+    animation-delay: .4s;
+}
+
+@keyframes fadeInMove {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes htmlSkill {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 95%;
+    }
+}
+@keyframes cssSkill {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+@keyframes jsSkill {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 75%;
+    }
+}
+@keyframes mvBottom {
+    0% {
+        bottom: -150px;
+    }
+    100% {
+        bottom: 10px;
+    }
+}
+@keyframes mvTop {
+    0% {
+        top: -150px;
+    }
+    100% {
+        top: 40px;
+    }
+}
+@keyframes dsTop {
+    0% {
+        top: -5rem;
+    }
+    100% {
+        top: 0;
+    }
+}
+
