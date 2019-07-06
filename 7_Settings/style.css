@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+}
+
+.header {
+    height: 100vh;
+    background-image: linear-gradient(45deg, #fc00ff, #00dbde);
+}
+
+.container {
+    height: 38rem;
+    width: 23rem;
+    margin: auto;
+    border: none;
+    overflow: hidden;
+    background-color: black;
+    font-family: 'Krub', sans-serif;
+    color: white;
+    position: relative;
+}
+
+.circle {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    padding: 3rem 2rem;
+
+}
+
+.container__top {
+    display: table;
+    width: 100%;
+    height: 7%;
+    background-image: linear-gradient(45deg, #00C9FF, #2ebf91);
+    padding-top: 15px;
+    padding-left: 15px;
+
+
+}
+
+.icon {
+    display: table-cell;
+    font-size: 2rem;
+    /*margin: 1rem 2rem;*/
+}
+
+.heading {
+    display: table-cell;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+
+.wave {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 70%;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+svg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.picture-holder {
+    position: absolute;
+    margin: auto;
+    top: 4rem;
+    left: 7.5rem;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px white;
+    overflow: hidden;
+}
+
+.picture-holder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text__name,
+.text__title {
+    margin: auto;
+    position: absolute;
+}
+
+.text__name {
+    top: 12.5rem;
+    left: 7.5rem;
+    margin-bottom: 0.5rem;
+    color: whitesmoke;
+    font-size: 1rem;
+}
+
+.text__title {
+    top: 14rem;
+    font-size: 0.9rem;
+    left: 9rem;
+    color: grey;
+}
+.container__settings {
+    display: block;
+    width: 19.5rem;
+    height: 10rem;
+    position: absolute;
+    top: 43%;
+    left: 7%;
+    color: whitesmoke;
+    font-size: 0.8rem;
+}
+.not__cont,
+.night-mode,
+.filter-tags{
+    width: 100%;
+    display: table;
+    margin-bottom: 2rem;
+}
+
+
+.notification {
+    display: table-cell;
+    width: 45%;
+    margin-right: 2rem;
+
+}
+
+.switch {
+    width: 25%;
+    display: table-cell;
+    border: 1px solid greenyellow;
+    position: relative;
+}
+.filter-tags {
+    margin-bottom: 1rem;
+}
+.tags__left,
+.tags__right {
+    display: table-cell;
+    width: 25%;
+}
+
+.tags__right{
+    color: #00aced;
+    position: absolute;
+    right:-6%;
+    bottom:20%;
+}
+p {
+    color:grey;
+    text-align: left;
+    font-size: 0.8rem;
+}
+.button {
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    left: 7%;
+    bottom: 14%;
+    font-size: 0.8rem;
+}
+.btn {
+    width: 30%;
+    color: #00aced;
+    background-color: transparent;
+    border: 2px solid #00aced;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-align: center;
+    margin:0.3rem;
+}
+.btn--beans {
+    width: 39%;
+}
+.btn--cheese {
+    width: 39%;
+
+}
+[name="close"]{
+    vertical-align: middle;
+    font-size: 0.7rem;
+}
+.btn--pink {
+    position: absolute;
+    bottom: 3%;
+    left: 7%;
+    width: 84%;
+    background-color: #e01981;
+    color:white;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 0.7rem;
+}
+[name="logo-instagram"] {
+    vertical-align: middle;
+    font-size: 1.4rem;
+}
