@@ -322,3 +322,15 @@ html {
     /*filter: drop-shadow(0 3px 0px  white);*/
 
 }
+.credit {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: yellow;
+
+    position: absolute;
+    right:15%;
+    top:20%;
+    text-align: center;
+    padding: 3rem 2rem;
+}

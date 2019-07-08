@@ -2532,7 +2532,6 @@
     -webkit-transform-origin: center;
     transform-origin: center;
     opacity: 1;
-
   }
 
   to {
@@ -2918,8 +2917,8 @@
 @-webkit-keyframes zoomIn {
   from {
     opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
+    -webkit-transform: scale(2.2);
+    transform: scale(2.2);
   }
 
   50% {
@@ -2930,8 +2929,8 @@
 @keyframes zoomIn {
   from {
     opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
+    -webkit-transform: scale(2.2);
+    transform: scale(2.2);
   }
 
   50% {
