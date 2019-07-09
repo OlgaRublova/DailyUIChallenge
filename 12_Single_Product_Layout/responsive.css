@@ -1,0 +1,178 @@
+/
+/
+MEDIA QUERY MANAGER
+
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+ORDER: Base + typography > general layout + grid > page layout > components
+1em = 16px
+*/
+@media only screen and (max-width: 400px) {
+
+}
+
+@media only screen and (min-width: 411px) and (max-width: 736px) {
+    .heading--main {
+        font-size: 2rem;
+    }
+
+    .heading--sub1 {
+        top: 8%;
+        font-size: 1.4rem;
+    }
+
+    .heading--sub2 {
+        top: 36%;
+        font-size: 1.1rem;
+    }
+
+    .description {
+        top: 53%;
+    }
+
+    .picture-holder {
+        left: 3%;
+    }
+
+    .accessories-holder {
+        top: 46%;
+    }
+
+    .list-items {
+        flex-direction: column;
+        width: 50%;
+        height: 50%;
+
+    }
+
+    .item {
+        width: 100%;
+    }
+
+    .list__text-sub {
+        font-size: 1rem;
+    }
+
+    span {
+        font-size: 23px;
+    }
+
+    .btn {
+        bottom: 1%;
+        text-align: center;
+        font-size: 0.9rem;
+        padding: 10px 16px;
+    }
+
+    .top-icon-cart {
+        right: 5%;
+    }
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+    body {
+        overflow: scroll;
+    }
+
+    .heading--main {
+        font-size: 2.5rem;
+    }
+
+    .heading--sub1 {
+        top: 8%;
+        font-size: 1.4rem;
+    }
+
+    .heading--sub2 {
+        top: 36%;
+        font-size: 1.1rem;
+    }
+
+    .description {
+        top: 53%;
+    }
+
+    .picture-holder {
+        left: 3%;
+    }
+
+    .accessories-holder {
+        top: 46%;
+    }
+
+    .list-items {
+        flex-direction: column;
+        width: 50%;
+        height: 50%;
+
+    }
+
+    .item {
+        width: 100%;
+    }
+
+    .list__text-sub {
+        font-size: 1rem;
+    }
+
+    span {
+        font-size: 23px;
+    }
+
+    .btn {
+        bottom: 1%;
+        text-align: center;
+        font-size: 0.9rem;
+        padding: 10px 16px;
+    }
+
+    .top-icon-cart {
+        right: 5%;
+    }
+
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .heading--main {
+        font-size: 5.5rem;
+    }
+
+    .heading--sub1 {
+        top: 27%;
+    }
+
+    .picture-holder {
+        left: 3%;
+    }
+
+    .btn {
+        bottom: 9%;
+    }
+}
+
+@media only screen and (min-width: 961px) {
+    .heading--main {
+        font-size: 7rem;
+    }
+
+    .picture-holder {
+        margin: 0;
+        left: 9%;
+    }
+
+    .btn {
+        left: 0;
+        bottom: 9%;
+        position: absolute;
+    }
+}
