@@ -22,7 +22,7 @@ body {
     -webkit-transform: translate(-50%, -50%);
     height: 70vh;
     width: 57vw;
-    background-color: white;
+    background-color: mintcream;
     border-radius: 10px;
 }
 
@@ -34,6 +34,8 @@ body {
     box-shadow: 0 0 3px 1px gainsboro;
     position: absolute;
     top: 0;
+    background-color: white;
+
 }
 
 .message {
@@ -49,7 +51,7 @@ body {
     height: 9%;
     background-color: snow;
     position: absolute;
-    top: 0;
+    top: 1%;
     left: 0;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -243,7 +245,7 @@ body {
     height: 11%;
     background-color: snow;
     position: absolute;
-    top: 0;
+    top: 1%;
     left: 0;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -466,7 +468,7 @@ body {
 .dots-s {
     position: absolute;
     bottom: 26%;
-    left: 9;
+    left: 9%;
     z-index: 10;
 }
 .dot-s--1, .dot-s--2, .dot-s--3 {
@@ -498,12 +500,52 @@ body {
 .write-message-holder {
     width: 100%;
     height: 7%;
-    border: 1px solid black;
     position: absolute;
     left: 0;
     bottom: 0%;
+    border-top: 0.5px solid lightgray;
+    color:lightgray;
+
+}
+[name="mail"] {
+    position: absolute;
+    top:25%;
+    left:6%;
+    font-size: 20px;
+}
+.type-message {
+    font-size: 14px;
+position: absolute;
+    top:25%;
+    left: 15%;
+}
+.dots-l {
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    z-index: 10;
+}
+.dot-l--1, .dot-l--2, .dot-l--3 {
+    display: inline-block;
+    border-radius: 50%;
+    height: 6px;
+    width:6px;
+    background-color: lightgray;
 }
 
+[name="paper-plane"] {
+    position: absolute;
+    top:25%;
+    right: 6%;
+    font-size: 20px;
+    color: mediumseagreen;
+}
+[name=happy] {
+    color: gold;
+    font-size: 16px;
+    font-weight: bold;
+    vertical-align: middle;
+}
 .credit {
     width: 10rem;
     height: 10rem;
