@@ -21,61 +21,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 @media only screen and (min-width: 411px) and (max-width: 736px) {
-    .heading--main {
-        font-size: 2rem;
-    }
-
-    .heading--sub1 {
-        top: 8%;
-        font-size: 1.4rem;
-    }
-
-    .heading--sub2 {
-        top: 36%;
-        font-size: 1.1rem;
-    }
-
-    .description {
-        top: 53%;
-    }
-
-    .picture-holder {
-        left: 3%;
-    }
-
-    .accessories-holder {
-        top: 46%;
-    }
-
-    .list-items {
-        flex-direction: column;
-        width: 50%;
-        height: 50%;
-
-    }
-
-    .item {
-        width: 100%;
-    }
-
-    .list__text-sub {
-        font-size: 1rem;
-    }
-
-    span {
-        font-size: 23px;
-    }
-
-    .btn {
-        bottom: 1%;
-        text-align: center;
-        font-size: 0.9rem;
-        padding: 10px 16px;
-    }
-
-    .top-icon-cart {
-        right: 5%;
-    }
 
 }
 

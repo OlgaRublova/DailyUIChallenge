@@ -197,7 +197,7 @@ html {
 
 span {
     left: 3px;
-    bottom: 17%;
+    bottom: 20%;
     position: absolute;
     font-size: 43px;
     color: black;
@@ -233,4 +233,16 @@ span {
     100% {
         opacity: 1;
     }
+}
+.credit {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: yellow;
+
+    position: absolute;
+    right:4%;
+    top:29%;
+    text-align: center;
+    padding: 3rem 2rem;
 }
