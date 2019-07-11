@@ -6,7 +6,7 @@
 
 html {
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    font-size: 100%;
 }
 
 .bg-cover {
@@ -32,7 +32,7 @@ html {
     font-family: 'Roboto', sans-serif;
     color: silver;
     box-shadow: 0 0 3px 1px gainsboro;
-    border-radius: 10px;
+    border-radius: 0.6rem;
 }
 
 .picture-holder {
@@ -109,7 +109,7 @@ html {
     color: black;
     font-weight: normal;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 0.6rem;
     left: 0;
     position: absolute;
 }
@@ -124,7 +124,7 @@ html {
 
 .heading--sub2 {
     top: 61%;
-    font-size: 27px;
+    font-size: 1.68rem;
     animation: animateIn 350ms ease-in-out both 1s;
 
 
@@ -132,7 +132,7 @@ html {
 
 .description {
     top: 78%;
-    font-size: 17px;
+    font-size: 1.06rem;
     animation: animateIn 350ms ease-in-out both 1.3s;
 
 
@@ -165,7 +165,7 @@ html {
     height: 100%;
     width: calc(90% / 6);
     border: 2px solid transparent;
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 
 .item:hover {
@@ -185,13 +185,13 @@ html {
 
 .list-text {
     top: 1%;
-    font-size: 12px;
+    font-size: 0.75rem;
     position: absolute;
 }
 
 .list__text-sub {
     top: 58%;
-    font-size: 20px;
+    font-size: 1.25rem;
     position: absolute;
 }
 
@@ -199,7 +199,7 @@ span {
     left: 3px;
     bottom: 20%;
     position: absolute;
-    font-size: 43px;
+    font-size: 2.68rem;
     color: black;
     font-weight: 300;
 
@@ -211,9 +211,9 @@ span {
     position: absolute;
     background-color: blue;
     text-transform: uppercase;
-    font-size: 25px;
-    padding: 15px 37px;
-    border-radius: 30px;
+    font-size: 1.56rem;
+    padding: 0.93rem 2.31rem;
+    border-radius: 1.87rem;
     font-family: inherit;
     transition: all 1s;
 }
