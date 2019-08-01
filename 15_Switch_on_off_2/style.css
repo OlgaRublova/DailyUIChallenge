@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body.night {
+    background: #00151f;
+    transition: .5s;
+
+}
+.toggle {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    background: #fff;
+    border: 2px solid #00151f;
+    width: 45px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: .5s;
+}
+.toggle.active {
+    background: #00151f;
+    border: 2px solid #fff;
+}
+.toggle:before {
+    content: "";
+    position: absolute;
+    top:1px;
+    left:2px;
+    width: 16px;
+    height:16px;
+    background: #00151f;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.toggle.active:before {
+    left:26px;
+    background: #fff;
+
+}
+.content {
+    margin: 100px auto;
+    width: 1000px;
+    text-align: justify;
+
+}
+
+.content h1 {
+    margin: 0 0 20px;
+    padding: 0;
+    color: #000;
+    transition: .5s;
+}
+.content p {
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+font-size: 18px;
+    color: #000;
+}
+
+body.night .content h1,
+body.night .content p {
+    color: #fff;
+    padding: 0;
+    transition: .5s;
+
+}

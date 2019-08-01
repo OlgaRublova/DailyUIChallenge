@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Countdown</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,800&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+<div class="toggle"></div>
+<div class="content">
+    <h1>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h1>
+    <p>Curabitur bibendum id eros id mattis. Suspendisse facilisis neque metus. Aenean feugiat sem non elit vehicula, at
+        blandit urna luctus. Quisque a massa accumsan, rutrum justo eget, volutpat leo. Donec fringilla, eros sed
+        pretium cursus, mi leo iaculis urna, id eleifend enim risus a lorem. Sed posuere commodo libero, malesuada
+        tincidunt felis fermentum eu. Vivamus blandit ultrices arcu, id auctor dolor ultrices nec. Praesent diam augue,
+        consectetur eget tempus a, euismod ornare orci. Ut pharetra finibus lorem, eu varius massa rutrum in. Integer
+        pulvinar non erat vel dapibus. Phasellus bibendum purus sit amet tortor maximus, nec consectetur velit tempor.
+        Proin pellentesque eget mi ac ullamcorper. Donec vitae efficitur dolor, porttitor pulvinar orci. Maecenas
+        eleifend ullamcorper magna et lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+    <h1>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h1>
+    <p>Curabitur bibendum id eros id mattis. Suspendisse facilisis neque metus. Aenean feugiat sem non elit vehicula, at
+        blandit urna luctus. Quisque a massa accumsan, rutrum justo eget, volutpat leo. Donec fringilla, eros sed
+        pretium cursus, mi leo iaculis urna, id eleifend enim risus a lorem. Sed posuere commodo libero, malesuada
+        tincidunt felis fermentum eu. Vivamus blandit ultrices arcu, id auctor dolor ultrices nec. Praesent diam augue,
+        consectetur eget tempus a, euismod ornare orci. Ut pharetra finibus lorem, eu varius massa rutrum in. Integer
+        pulvinar non erat vel dapibus. Phasellus bibendum purus sit amet tortor maximus, nec consectetur velit tempor.
+        Proin pellentesque eget mi ac ullamcorper. Donec vitae efficitur dolor, porttitor pulvinar orci. Maecenas
+        eleifend ullamcorper magna et lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".toggle").click(function () {
+            $(".toggle").toggleClass("active")
+            $("body").toggleClass("night")
+        })
+    })
+
+</script>
+</body>
+</html>
