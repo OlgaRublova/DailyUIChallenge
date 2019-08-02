@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Next Prev Slide</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style.css">
+
+
+<body>
+<div class="container">
+    <div class="slide">
+        <div class="active"><img
+                src="https://images.pexels.com/photos/462030/pexels-photo-462030.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt=""></div>
+        <div><img
+                src="https://images.pexels.com/photos/1072842/pexels-photo-1072842.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt=""></div>
+        <div><img
+                src="https://images.pexels.com/photos/931018/pexels-photo-931018.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt=""></div>
+        <div><img
+                src="https://images.pexels.com/photos/1556796/pexels-photo-1556796.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt=""></div>
+                <div><img src="https://images.pexels.com/photos/1722206/pexels-photo-1722206.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt=""></div>
+    </div>
+    <div class="control">
+        <h2 class="next">Next</h2>
+        <h2 class="prev">Prev</h2>
+    </div>
+</div>
+
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".next").click(function () {
+            $(".slide").find("div.active").next().addClass("active");
+            $(".slide").find("div.active").prev().removeClass("active");
+
+        })
+
+
+        $(".prev").click(function () {
+            $(".slide").find("div.active").prev().addClass("active");
+            $(".slide").find("div.active").next().removeClass("active");
+
+        })
+    })
+</script>
+</body>
+</html>
