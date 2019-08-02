@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Easy Pie Chart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+<div class="container">
+
+    <div class="box">
+        <div class="chart" data-percent="73">73%</div>
+        <h2>HTML</h2>
+    </div>
+
+    <div class="box">
+        <div class="chart" data-percent="90">90%</div>
+        <h2>CSS</h2>
+
+    </div>
+
+    <div class="box">
+        <div class="chart" data-percent="85">85%</div>
+        <h2>Javascript</h2>
+
+    </div>
+
+    <div class="box">
+        <div class="chart" data-percent="55">55%</div>
+        <h2>Photoshop</h2>
+
+    </div>
+
+
+
+
+
+
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="jquery.easypiechart.js"></script>
+<script>
+    $(function() {
+        $('.chart').easyPieChart({
+            //your options goes here
+            size:180,
+            barColor: "#17d3e6",
+            scaleColor:"false",
+            lineWidth:15,
+            trackColor: "#373737",
+            lineCap: "circle",
+            animate: 5000 // animation duration
+
+        });
+    });
+</script>
+
+</body>
+</html>
