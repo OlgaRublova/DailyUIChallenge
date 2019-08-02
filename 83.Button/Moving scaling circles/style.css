@@ -43,7 +43,7 @@ a:before {
     background: #ff0052;
     border-radius: 50%;
     z-index: -1;
-    transition-property: left, transform ;
+    transition-property: left, transform;
     transition-delay: 0s, 0s;
     transition-duration:  1s, .5s;
     opacity:0;
@@ -55,7 +55,6 @@ a:hover:before {
     transform: translateY(-50%) scale(20);
     transition-delay: 0s, 1s;
     opacity:1;
-
 }
 
 a:after {
