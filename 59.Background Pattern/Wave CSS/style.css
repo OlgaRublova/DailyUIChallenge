@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+section {
+    width:100%;
+    min-height: 500px;
+}
+.wave {
+    position: relative;
+    background: linear-gradient(0deg,#f0027f, #75489f);
+}
+.wave:before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left:0;
+    height: 257px;
+    width: 100%;
+    background-size: cover;
+    background: url("wave.png") round;
+}
