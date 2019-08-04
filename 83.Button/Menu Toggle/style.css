@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background: #262626;
 
 }
 
@@ -22,7 +23,10 @@ body {
     width: 0;
     height: 100%;
     overflow: hidden;
+    transition: width .5s;
+
 }
 .toggle.active:before {
     width: 100%;
+    transition: width .5s;
 }
