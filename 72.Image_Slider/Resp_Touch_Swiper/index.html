@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>3D Swipe Slider</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="imgBx"><img
+                    src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="">
+            </div>
+            <div class="details">
+                <h3>Rebecca Jones <br><span>Web Developer</span></h3>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgBx"><img
+                    src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="">
+            </div>
+            <div class="details">
+                <h3>Peter Smith <br><span>Web Developer</span></h3>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgBx"><img
+                    src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="">
+            </div>
+            <div class="details">
+                <h3>Rebecca Jones <br><span>Web Developer</span></h3>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgBx"><img
+                    src="https://images.pexels.com/photos/1845534/pexels-photo-1845534.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="">
+            </div>
+            <div class="details">
+                <h3>Rebecca Jones <br><span>Web Developer</span></h3>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgBx"><img
+                    src="https://images.pexels.com/photos/1855582/pexels-photo-1855582.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="">
+            </div>
+            <div class="details">
+                <h3>Rebecca Jones <br><span>Web Developer</span></h3>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgBx"><img
+                    src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="">
+            </div>
+            <div class="details">
+                <h3>Rebecca Jones <br><span>Web Developer</span></h3>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgBx"><img
+                    src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="">
+            </div>
+            <div class="details">
+                <h3>Rebecca Jones <br><span>Web Developer</span></h3>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+
+<!-- Swiper JS -->
+
+<script type="text/javascript" src="swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 30,
+            stretch: 0,
+            depth: 500,
+            modifier: 4,
+            slideShadows: true,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+</script>
+</body>
+</html>
