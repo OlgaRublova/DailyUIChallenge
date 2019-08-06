@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+section {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background: #ff319c url("https://images.pexels.com/photos/54200/pexels-photo-54200.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") ;
+    background-size: cover;
+    clip-path: url(#curve);
+
+    width: 100%;
+    height: 100vh;
+}
+#curve {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+#curve path {
+    fill:#fff;
+}
+
+section.sec2 {
+    width: 100%;
+    height: 100vh;
+    background: white;
+}
