@@ -7,7 +7,7 @@
 body {
     font-family: Roboto, sans-serif;
     overflow: hidden;
-    background: linear-gradient(to bottom, #004b79, whitesmoke);
+    background: linear-gradient(to bottom, lavender, #e91e63);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -26,6 +26,8 @@ body {
     overflow: hidden;
     background: #141414;
     margin: 0 auto;
+    border: 3px solid whitesmoke;
+
 }
 
 .map {
