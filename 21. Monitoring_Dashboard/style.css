@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background: lavender;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Lato', sans-serif;
+
+}
+
+.container {
+    width: 700px;
+    height: 565px;
+    position: relative;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.container .board {
+    position: relative;
+    width: calc(50% - 20px);
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container .board .top {
+    background: #6b60ff;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    padding: 30px 0 70px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: whitesmoke;
+    height: 50px;
+
+    color: lightgrey;
+    font-size: 26px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa:hover {
+    border-bottom: 2px solid #6b60ff;
+    color: #6b60ff;
+    text-shadow: 0 0 10px rgba(107, 96, 255, 0.3);
+    background: transparent;
+    padding-bottom: 3px;
+}
+
+.fa-home {
+    position: relative;
+}
+
+.fa-home:after {
+    content: "";
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background: red;
+    position: absolute;
+    top: 2px;
+    right: -3px;
+
+}
+
+.boxBox{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.boxBox1 {
+    height: 75%;
+    margin-top: -60px;
+    background: transparent;
+    z-index: 2;
+}
+
+.boxBox .box {
+    width: 35%;
+    padding: 15px;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2);
+    color: rgba(186, 186, 186, 0.7);
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: white;
+    border-radius: 5px;
+}
+.box:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.boxBox1 .box img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    padding: 0;
+    margin: 5px;
+}
+
+
+
+.boxBox2 .box2 {
+    width: 100%;
+    justify-content: center;
+    align-items: center
+
+}
+.boxBox2 .box2:nth-of-type(1){
+    border: 1px solid red;
+}
+
+
+.boxBox2 .box2 img {
+    width:20%;
+    object-fit: cover;
+    padding: 0;
+    margin: 5px;
+    float:left;
+
+}
+
+.boxBox2 .box2 .textBox {
+    width:80%;
+    float:right;
+
+}
+button {
+    width: 90%;
+    height: 45px;
+    color:white;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: salmon;
+    font-size: 14px;
+    border-radius: 5px;
+    line-height: 45px;
+    outline:none;
+    border:none;
+}
