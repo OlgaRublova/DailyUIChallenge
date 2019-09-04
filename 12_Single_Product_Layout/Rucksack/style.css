@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.single-item {
+    position: absolute;
+    width: 550px;
+    height: 390px;
+    border: 6px solid #fff;
+    background: whitesmoke;
+    box-shadow: 0 30px 20px -20px rgba(255,255,255,0.3);
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+
+
+}
+.left-set {
+    float: left;
+    overflow: hidden;
+}
+.left-set img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+}
+.right-set{
+    float: left;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+
+}
+.left-set, .right-set{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+.right-set .name {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+
+}
+.right-set .subname {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+
+}
+.right-set .name,
+.right-set .subname {
+    font-weight: bold;
+}
+.right-set .price {
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.right-set .description p {
+    font-size: 0.9rem;
+    text-align: justify;
+    -webkit-hyphens: auto;
+    hyphens:auto;
+
+}
+.right-set .color{
+    margin: 1rem 0;
+}
+.right-set .color:after{
+    content: "";
+    display: block;
+    clear: left;
+
+}
+.right-set .color button.li{
+    width: 30px;
+    height: 30px;
+    border: 1.5px solid #aaa;
+    border-radius: 4px;
+    float: left;
+    margin-right: 0.4rem;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.right-set .color button.li:nth-child(1) {
+    background: #262626;
+}
+.right-set .color button.li:nth-child(1):hover {
+    border-color: #262626;
+}
+.right-set .color button.li:nth-child(2) {
+    background: crimson;
+}
+.right-set .color button.li:nth-child(2):hover {
+    border-color: #e91e63;
+}
+.right-set button {
+    width: 100%;
+    height: 2rem;
+    cursor: pointer;
+    background: none;
+    border: 2px solid #111;
+    border-radius: 4px;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    transition: all .4s ease;
+}
+.right-set button:hover {
+    background: cyan;
+}
