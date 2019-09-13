@@ -116,6 +116,12 @@ html {
 .key--even {
     background-color: #26ba6f;
     border-bottom-right-radius: 10px;
+    border: 1px solid #443c6f;
+    text-align: center;
+    padding: 1.1rem;
+    font-size: 1.1rem;
+    outline: none;
+    color: whitesmoke;
 }
 
 .key--plus,
@@ -163,12 +169,3 @@ html {
     box-shadow: 0.05rem 0.1rem 0.1rem lightgrey;
     /*margin-bottom: 1rem;*/
 }
-/*.btn {*/
-/*    background-color: whitesmoke;*/
-/*    border: 1px solid grey;*/
-/*    width: 4px;*/
-/*    height: 7px;*/
-/*    position: absolute;*/
-/*    */
-
-/*}*/
