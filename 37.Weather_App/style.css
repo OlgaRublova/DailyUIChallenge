@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
