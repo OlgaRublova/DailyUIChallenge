@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TV app</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="lightslider.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="lightslider.css" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="tvBox">
+    <ul class="nav-right">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+        <li><a href="#">Live TV</a></li>
+        <li><a href="#">Tv Shows</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">Video</a></li>
+    </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <img class="moviePoster"
+                     src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b3/Outlander-TV_series-2014.jpg/170px-Outlander-TV_series-2014.jpg"
+                     alt="">
+            </div>
+            <div class="col-8 ">
+                <div class="textDetails">
+                    <h2 class="mt-1">Outlander</h2>
+                    <h6>Director: Steve Jones</h6>
+                    <p><strong>Story:</strong> There are many variations of passages of Lorem Ipsum available, but the
+                        majority have suffered to repeat predefined chunks as necessary, making this the first true
+                        generator on the Internet.
+                    </p>
+                    <p><strong>Cast:</strong> Caitriona Balfe, Sam Heughan, Duncan Lacroix </p>
+                    <button type="button" class="btn btn-outline-success"><i class="fas fa-sort-up"></i>PLAY NOW
+                    </button>
+                    <button type="button" class="btn"><i class="fas fa-plus-circle"></i>Add to wishlist</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-11 ">
+                <h5 class="mt-5 ml-5 text-dark">Similar Show</h5>
+                <div class="similarShowPics" id="lightSlider">
+                    <i class="fas fa-angle-left prev"></i>
+                    <img onmouseover="change_img(this)"
+                         src="https://i.kinja-img.com/gawker-media/image/upload/s--eps2HE4G--/f_auto/790644241430384303.jpg"
+                         alt="">
+                    <img onmouseover="change_img(this)" src="https://i.pinimg.com/originals/77/ab/93/77ab93c740e3785ab0049f92b5359c45.jpg" alt="">
+                    <img onmouseover="change_img(this)" src="https://images-na.ssl-images-amazon.com/images/I/71xMarjRTPL._SY679_.jpg" alt="">
+                    <img onmouseover="change_img(this)" src="https://i.pinimg.com/originals/c7/2a/19/c72a19371603b96d22ef81352917eb17.jpg" alt="">
+                    <img onmouseover="change_img(this)" src="https://fanart.tv/detailpreview/fanart/tv/258171/tvposter/continuum-564a3f57b70b2.jpg"
+                         alt="">
+                    <i class="fas fa-angle-right next"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script type="text/javascript" src="index.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
