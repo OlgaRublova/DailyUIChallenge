@@ -1,0 +1,33 @@
+body {
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subscribeBox{
+    height: 700px;
+    width: 900px;
+    background-color: #778eb6;
+}
+.btn{
+    text-transform: uppercase;
+    position: relative;
+    height: 40px;
+    width: 110px;
+    background-color: #9fd6d2;
+    color:#2a79f3;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -12px;
+    border: 3px solid #2f77d6;
+    z-index: 2;
+    height: 40px;
+    width: 110px;
+}

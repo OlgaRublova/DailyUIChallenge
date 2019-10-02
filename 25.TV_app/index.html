@@ -7,10 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TV app</title>
     <link rel="stylesheet" href="style.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="lightslider.js"></script>
-
-    <link type="text/css" rel="stylesheet" href="lightslider.css" />
+    <link rel="stylesheet" type="text/css" href="glider.css">
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
@@ -52,29 +49,63 @@
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-11 ">
                 <h5 class="mt-5 ml-5 text-dark">Similar Show</h5>
-                <div class="similarShowPics" id="lightSlider">
-                    <i class="fas fa-angle-left prev"></i>
-                    <img onmouseover="change_img(this)"
-                         src="https://i.kinja-img.com/gawker-media/image/upload/s--eps2HE4G--/f_auto/790644241430384303.jpg"
-                         alt="">
-                    <img onmouseover="change_img(this)" src="https://i.pinimg.com/originals/77/ab/93/77ab93c740e3785ab0049f92b5359c45.jpg" alt="">
-                    <img onmouseover="change_img(this)" src="https://images-na.ssl-images-amazon.com/images/I/71xMarjRTPL._SY679_.jpg" alt="">
-                    <img onmouseover="change_img(this)" src="https://i.pinimg.com/originals/c7/2a/19/c72a19371603b96d22ef81352917eb17.jpg" alt="">
-                    <img onmouseover="change_img(this)" src="https://fanart.tv/detailpreview/fanart/tv/258171/tvposter/continuum-564a3f57b70b2.jpg"
-                         alt="">
-                    <i class="fas fa-angle-right next"></i>
+                <div class="similarShowPics ">
+                    <div class="glider-contain">
+                        <div class="glider">
+                            <div><img onmouseover="change_img(this)"
+                                      src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b3/Outlander-TV_series-2014.jpg/170px-Outlander-TV_series-2014.jpg"
+                                      alt=""></div>
+                            <div><img onmouseover="change_img(this)"
+                                      src="https://i.kinja-img.com/gawker-media/image/upload/s--eps2HE4G--/f_auto/790644241430384303.jpg"
+                                      alt=""></div>
+                            <div><img onmouseover="change_img(this)"
+                                      src="https://i.pinimg.com/originals/77/ab/93/77ab93c740e3785ab0049f92b5359c45.jpg"
+                                      alt=""></div>
+                            <div><img onmouseover="change_img(this)"
+                                      src="https://images-na.ssl-images-amazon.com/images/I/71xMarjRTPL._SY679_.jpg"
+                                      alt=""></div>
+                            <div><img onmouseover="change_img(this)"
+                                      src="https://i.pinimg.com/originals/c7/2a/19/c72a19371603b96d22ef81352917eb17.jpg"
+                                      alt=""></div>
+                            <div><img onmouseover="change_img(this)"
+                                      src="https://m.media-amazon.com/images/M/MV5BMTU0MTI0MDAyM15BMl5BanBnXkFtZTgwMDg5MzYyNTM@._V1_.jpg"
+                                      alt=""></div>
+
+                            <div><img onmouseover="change_img(this)"
+                                      src="https://fanart.tv/detailpreview/fanart/tv/258171/tvposter/continuum-564a3f57b70b2.jpg"
+                                      alt=""></div>
+                            <div><img onmouseover="change_img(this)"
+                                      src="https://cdn.shopify.com/s/files/1/0969/9128/products/The_big_bang_theory_-_massive_bangers_2c119fbf-e85a-42ab-b808-a01100824a72.jpg?v=1514028791"
+                                      alt=""></div>
+                            <div><img onmouseover="change_img(this)"
+                                      src="https://i.pinimg.com/originals/eb/a4/df/eba4df809a662b2f43a8b065903f5ddc.jpg"
+                                      alt=""></div>
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                    <button role="button" aria-label="Previous" class=" glider-prev">
+                        <i class="fas fa-angle-left "></i>
+                    </button>
+                    <button role="button" aria-label="Next" class="glider-next">
+                        <i class="fas fa-angle-right"></i>
+                    </button>
+
                 </div>
             </div>
         </div>
     </div>
-</div>
 
 
+    <script type="text/javascript" src="index.js"></script>
+    <script src="glider.js"></script>
 
-
-<script type="text/javascript" src="index.js"></script>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
