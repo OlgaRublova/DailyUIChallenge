@@ -57,22 +57,14 @@ ul.nav-right li:last-of-type {
 }
 
 
-
-.similarShowPics{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /*margin-top: 50px;*/
-}
 .similarShowPics img {
     height: 100%;
     width: 16%;
     object-fit: cover;
+
 }
 
-.imgBorder {
-    border: 2px solid black;
-}
+
 
 
 
