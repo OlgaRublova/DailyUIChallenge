@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background: linear-gradient(to bottom,gray, brown);
+
+}
+
+.uploader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 500px;
+    display: flex;
+    border-radius: 8px;
+    background: gainsboro;
+
+}
+.uploader__icon,
+.uploader__content{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon__holder img {
+    height: 200px;
+    width: 200px;
+}
+.uploader__icon h2 {
+    background: -webkit-linear-gradient(#262626, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     margin-top: 15px;
+}
+.uploader__content .row {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    font-size: 18px;
+    font-weight: 400;
+    color: darkgrey;
+    padding: 15px 30px;
+}
+.uploader__content .row div:first-child{
+    /*width: 140px;*/
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+
+}
+.fa-check-circle{
+    font-size: 35px;
+    /*color: #2dc66e;*/
+    color: green;
+    font-weight: bolder;
+}
+
+.fa-spinner
+{
+    font-size: 35px;
+    color: dimgrey;
+    animation: spinner-loader linear infinite .9s;
+
+}
+.content__file{
+    color: #262626;
+}
+.fa-trash-alt{
+    font-size: 18px;
+    color: whitesmoke;
+}
+.fa-times{
+    font-size: 18px;
+    color: dimgrey;
+
+}
+@keyframes spinner-loader {
+    0%{
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
