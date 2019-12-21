@@ -19,6 +19,7 @@ body {
     display: flex;
     height: 600px;
     width: 1000px;
+    background: linear-gradient(to right, white 40%, snow 40%);
 }
 
 .container__img {
@@ -54,10 +55,8 @@ body {
 
 .img__nav img {
     height: 100%;
-    /*width: 18%;*/
     object-fit: cover;
     border-radius: 50%;
-    background-color: white;
     border: 1px solid silver;
 }
 
@@ -81,7 +80,6 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: snow;
     font-family: 'Roboto', sans-serif;
     text-align: justify;
     padding: 50px 40px;
